@@ -1,0 +1,528 @@
+﻿
+int a=10,b=11,c=12,d=13;
+void setup()
+{
+  pinMode(2,INPUT);
+  pinMode(3,OUTPUT);
+  pinMode(a, OUTPUT); 
+  pinMode(b, OUTPUT); 
+  pinMode(c, OUTPUT); 
+  pinMode(d, OUTPUT); 
+
+}
+//下面是灯
+void loop()
+{
+      int q=digitalRead(7);
+     if(q==1)
+      {
+        delay(5200);  
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//6s
+  delay(500);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//6s
+  delay(6500);                    
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//13S
+  delay(300);                    
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//13.3
+  delay(8700);   
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//6s
+  delay(500);
+                
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//22s
+  delay(400);   
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);   
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);  
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//22s
+  delay(400);   
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);   
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//323
+  delay(400);   
+    digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);  
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//24s
+  delay(400);   
+    digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//131
+  delay(400);  
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,HIGH);//24
+  delay(400);   
+    digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//13
+  delay(400);  
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//1234
+  delay(400);   
+    digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//26
+  delay(400);  
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+    digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//1234
+  delay(400);
+    digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//12
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//34
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//1234
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//1234(31s)
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//112
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//30S
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//321
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//112
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//30S
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//321
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//321
+  delay(400);
+  
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(350);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//36s
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(250);
+
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//2341
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//2341
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//双手121
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//40s
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//两次
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//持续的1，变得234
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//44
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//2
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//13
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//2
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//3
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//3
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(350);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//50
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//三连击
+  delay(300);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(350);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//三连击*2
+  delay(300);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//阶梯54
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//台阶
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(350);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//56
+  delay(350);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(50);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(250);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//60
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//64
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//66
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//68
+  delay(400);
+
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(150);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(190);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(150);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(190);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(150);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(190);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(150);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(190);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(150);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//70
+  delay(190);
+  
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//72
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//74
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//76
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//78
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//80
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//82
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//82
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//84
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//86
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//88
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//90
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//一分32s
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//34
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//36
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//38
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//40
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//42
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//44
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//46
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//48
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//50
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,HIGH); digitalWrite(c,HIGH);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,HIGH); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,HIGH);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//
+  delay(400);
+  digitalWrite(a,LOW); digitalWrite(b,LOW); digitalWrite(c,LOW);digitalWrite(d,LOW);//52
+  delay(400);
+  
+  }
+}

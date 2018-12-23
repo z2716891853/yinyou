@@ -1,0 +1,53 @@
+
+char data="0";
+char js[10];
+
+boolean get_touch(int a){
+  boolean touch_stat=0;
+
+  touch_stat=digitalRead(a);//读入状态
+
+  return touch_stat;
+
+}
+
+
+
+void setup() {
+  pinMode(2,INPUT);
+  pinMode(3,INPUT);
+  pinMode(4,INPUT);
+  pinMode(5,INPUT);
+  pinMode(8,OUTPUT);//输出给2号板
+  pinMode(10,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(13,OUTPUT);
+  }
+
+  void loop(){
+     int p=0;
+    while(Serial.available()>0){//接受蓝牙
+      data=Serial.read();
+      js[p]=data;
+      p++;
+      delay(2);
+      }
+      if(js[0]=='1')
+      digitalWrite(8,HIGH);//开始亮灯
+      
+      boolean t[4]={0};//循环接受触摸
+      for(int i=0;i<4;i++)
+      {
+        t[i]=get_touch(i+2);
+        }
+      for(int i=0;i<4;i++){
+        if(t[i]==1) 
+        digitalWrite(i+10,HIGH);
+        }
+         for(int i=0;i<4;i++){
+        if(t[i]==0) 
+        digitalWrite(i+10,LOW);
+        }    
+       delay(100);
+    }

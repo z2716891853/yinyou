@@ -1,0 +1,61 @@
+主机：
+boolean get_touch(){
+
+  boolean touch_stat=0;
+
+  touch_stat=digitalRead(8);//读入状态
+
+  return touch_stat;
+
+}
+
+ 
+
+void setup() {
+
+  // put your setup code here, to run once:
+
+  pinMode(8,INPUT);       //设置13号端口为输入模式
+pinMode(2,OUTPUT);
+
+
+}
+
+ 
+
+void loop() {
+
+  boolean touch_stat;
+
+  touch_stat=get_touch();
+  if(touch_stat==1)
+  digitalWrite(2,HIGH);
+ if(touch_stat==0)
+  digitalWrite(2,LOW);
+  delay(1000);
+
+}
+从机：
+
+
+void setup() {
+
+  // put your setup code here, to run once:
+
+  pinMode(2,INPUT);       //设置13号端口为输入模式
+  pinMode(13,OUTPUT);
+Serial.begin(115200);
+}
+
+ 
+
+void loop() {
+  int a=digitalRead(2);
+  Serial.print(a);
+  if(a==1)
+  digitalWrite(13,HIGH);
+    if(a==0)
+  digitalWrite(13,LOW);
+  delay(1000);
+
+}

@@ -1,0 +1,52 @@
+<view class="section">       <!-- 第一行 -->
+    <view class="content">
+      <text>蓝牙开关</text>
+    </view>
+    <view class="switch">
+      <switch checked="{{isbluetoothready}}" bindchange="open_BLE" />
+    </view>
+  </view>
+ 
+  <view class="section">        <!-- 第二行 -->
+    <button class="class1"  size="{{primarySize}}" loading="{{searchingstatus}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="search_BLE"> {{searchingstatus?"搜索中":"蓝牙搜索"}} </button>
+  </view>
+  <image class="widget__arrow" src="/images/6.jpg" mode="aspectFill">
+</image>
+
+ 
+  <block wx:for="{{list}}">     <!-- 第三行 -->
+    <view class="section" style="flex-direction:row" >
+      <view>
+        <text>{{index}}:\n </text>
+        <text>{{item.name}}\n</text>
+      </view>
+      <view class="connection">
+      <button id="{{item.deviceId}}" size="mini"
+              bindtap="connectTO"> {{deviceconnected?"已连接":"连接"}} </button>
+      </view>
+    </view>
+  </block> 
+ 
+<block wx:if="{{deviceconnected}}">    <!-- 第四行 //-->
+    <view >
+      <text>\n\n数据接收\n</text>
+      <text>{{receive_data}}\n</text>
+      <!-- <button size="mini" bindtap="receiveMessages">接收</button> -->
+    </view>
+    <view class="send">
+      <form bindsubmit="formSubmit">
+        <text>\n\n\n</text>
+       <text class='ziti6'>开始播放</text>
+        <switch bindchange="switch1Change"/>
+        <text>\n\n</text>
+  <view class="page__bd">
+    <view class="section section_gap">
+      <audio src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" action="{{audioAction}}" bindplay="audioPlayed" bindtimeupdate="audioTimeUpdated" controls></audio>
+    </view>
+  </view>
+        <button bindtap="playAudio" size="mini" formType="submit">发送</button>
+
+        <button size="mini" formType="reset">清空</button>
+      </form>
+    </view>
+</block>

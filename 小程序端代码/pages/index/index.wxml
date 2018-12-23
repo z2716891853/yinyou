@@ -1,0 +1,7 @@
+ 
+<view>
+ <text class="c">From C325 </text>
+  <image class="widget__arrow" src="/images/4.jpg" mode="aspectFill">
+</image>
+ </view>
+

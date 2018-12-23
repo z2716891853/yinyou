@@ -1,0 +1,11 @@
+/**index.wxss**/
+.c {
+  margin-top: 0px;
+  color: rgb(0, 0, 0);
+  margin-left: 265rpx;
+}
+.widget__arrow{
+  height: 1000rpx;
+  margin-top: 10px;
+  margin-left: 0rpx
+}
